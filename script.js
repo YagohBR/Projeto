@@ -8,3 +8,9 @@ abrirMenu.addEventListener("click", () => {
     menuLateral.style.left = "0px";
   }
 });
+
+const botaoTema = document.getElementById("alternar-tema");
+
+botaoTema.addEventListener("click", () => {
+  document.body.classList.toggle("escuro");
+});
