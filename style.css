@@ -16,6 +16,9 @@ body.escuro {
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.text {
+  margin-bottom: 20px ;
+}
 .tema {
     position: fixed;
     left: 1400px;
