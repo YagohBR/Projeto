@@ -17,12 +17,12 @@ body.escuro {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .text {
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 .tema {
-    position: fixed;
-    left: 1400px;
-    margin-top: 10px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
 .grade-blocos {
   display: grid;
@@ -194,13 +194,11 @@ body.escuro {
     min-width: 200px;
   }
   .contatos h4 {
-    margin-left: 450px;
-    margin-bottom: 10px;
+    text-align: center;
   }
   .contatos p {
     
-    margin: 5px;
-    margin-left: 450px;
+    text-align: center;
     font-size: 15px;
   }
   .icone-contato {
@@ -237,4 +235,34 @@ summary {
   vertical-align: middle;
   margin-right: 8px;
   filter: brightness(0) invert(1);
+}
+
+@media (max-width: 600px) {
+  .grade-blocos {
+    grid-template-columns: 1fr;
+  }
+
+  .contatos h4,
+  .contatos p,
+  .feedback-input {
+    margin-left: 0;
+  }
+
+  .conteudo-rodape {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-lateral {
+    width: 200px;
+  }
+
+  .botao-menu {
+    padding: 8px 12px;
+  }
 }
